@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mini Form</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
     <!-- CSS -->
     <link rel="stylesheet" href="./css/normalize.css"> <!-- https://necolas.github.io/normalize.css/ -->
     <link rel="stylesheet" href="css/animate.min.css"> <!-- https://animate.style/ -->
@@ -20,10 +20,31 @@
 <h1>Mini Form</h1>
 
 <form action="https://kode.ch/getpost" method="get">
-    <label for="email">E-mail</label>
-    <input  id="email" name="email" type="text">
+    <ul>
+        <li>
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email">
+        </li>
+    </ul>
 
-    <button>Créer un compte</button>
+    <ul>
+        <li>
+            <label for="mot-de-passe">mot de passe</label>
+            <input id="mot-de-passe" name="mot de passe" type="password">
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <label for="confirmer-mot-de-passe">confirmer mot de passe</label>
+            <input id="confirmer-mot-de-passe" name="confirmer mot de passe" type="password">
+        </li>
+
+        <li>
+            <button>Créer un compte</button>
+        </li>
+    </ul>
+
 </form>
 <script src="js/main.js"></script>
 </body>
