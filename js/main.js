@@ -15,11 +15,14 @@ listeBackground.addEventListener('change', function () {
 
 // Récupère le formulaire
 const formulaire = document.querySelector('form');
+
 // Ecoute l'envoi du formulaire
 // Fait rebondir le bouton "Créer un compte" puis reset le formulaire
 formulaire.addEventListener('submit', function (event) {
+
   // Annule l'envoi du formulaire
   event.preventDefault();
+
   // Récupère le bouton "Créer un compte"
   const btCreer = document.querySelector('[type="submit"]');
   btCreer.classList.add('animate__heartBeat');
