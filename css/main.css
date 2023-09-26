@@ -57,6 +57,7 @@ form {
     max-width: 450px;
     background-color: white;
     border: 6px solid  #2b2d42;
+    border-radius: 5%;
 }
 
 form ul {
@@ -74,4 +75,44 @@ label {
     margin-bottom: 0.5em;
     font-weight: bold;
     cursor: pointer;
+}
+
+input, select {
+    border: 2px solid #2b2d42;
+    padding: 1em;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+input[type="email"]:invalid {
+    border-color: #e74c3c;
+}
+
+input[type="email"]:valid  {
+    border-color: darkgreen;
+}
+
+label input {
+    display: inline;
+    width: auto;
+}
+
+fieldset {
+    border: 2px solid #2b2d42;
+}
+
+fieldset legend {
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+fieldset label {
+    margin: 1em 0;
+    font-weight: normal;
+}
+
+fieldset input:checked + span {
+    font-weight: bold;
 }
